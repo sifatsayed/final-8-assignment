@@ -1,0 +1,23 @@
+.background-image {
+    background: url(../../image//rifat.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.background-image-title {
+    position: relative;
+    top: 40%;
+    left: 35%;
+    font-size: 40px;
+}
+
+@media only screen and (max-width : 668px) {
+    .background-image-title {
+        text-align: left;
+        font-size:30px;
+        margin-left: -70px;
+        margin-top: 30px;
+        color: cyan;
+    }
+}

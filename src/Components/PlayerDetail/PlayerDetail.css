@@ -1,0 +1,26 @@
+.title-image {
+    height: 1000px;
+    width: 100%;
+}
+.player-detail-container {
+   
+    padding: 100px;
+    color: white;
+}
+.player-detail-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+.player-detail-background {
+    background-color: rgb(8, 8, 26);
+}
+
+.font-awesome {
+    font-size: 30px;
+}
+@media only screen and (max-width : 668px) {
+    .player-detail-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
