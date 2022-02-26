@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import PlayerDetailDescription from '../PlayerDetailDescription/PlayerDetailDescription';
 import './PlayerDetail.css';
 import image from '../../image/sifat2.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBookSkull, faBoxOpen, faCoffee, faPersonBooth } from '@fortawesome/free-solid-svg-icons'
+import { faBookSkull, faBoxOpen,  faPersonBooth } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -17,7 +17,7 @@ const PlayerDetail = () => {
         fetch(`https://www.breakingbadapi.com/api/characters/${userId}`)
         .then(res => res.json())
         .then(data => setPlayerDetail(data[0]))
-    },[])
+    },[userId])
     return (
         <div>
             

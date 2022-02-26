@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
 import Player from '../Player/Player';
-import bgImage from '../../image/rifat.jpeg';
 import './Home.css'
 
 const Home = () => {
