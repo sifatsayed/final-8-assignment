@@ -6,11 +6,10 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom';
 
 const Player = (props) => {
-    console.log(props.player);
+   
     const {img, category, name, char_id} = props.player ;
     const navigate = useNavigate();
     const handleClick = () => {
-        console.log("guta marsa")
         navigate(`playerdetail/${char_id}`)
     }
     return (
